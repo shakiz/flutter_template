@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_template/presentation/home/home_viewmodel.dart';
 import 'package:provider/provider.dart';
 
+import '../../gen/assets.gen.dart';
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
@@ -32,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     '${homeViewModel.counter}',
                     style: Theme.of(context).textTheme.headlineMedium,
                   ),
+                  Image.asset(Assets.illustrations.bannerItemDetails.path)
                 ],
               ),
             ),
